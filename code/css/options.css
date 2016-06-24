@@ -1,0 +1,40 @@
+.options-pane {
+  width: 650px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #55AAEE;
+  font: message-box;
+  background-color: #EEEEEE;
+}
+ 
+.icon {
+  vertical-align: top;
+  padding-right: 18px;
+  width: 50px;
+}
+ 
+.options-title {
+  font-weight: bold;
+  padding-bottom: 15px;
+  text-align: center;
+}
+ 
+.close-button {
+  margin-top: 20px;
+  text-align: center;
+}
+ 
+.options-table {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 100%;
+}
+
+.feedback-link {
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8em;
+}

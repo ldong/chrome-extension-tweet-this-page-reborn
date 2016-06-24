@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "js/codebird.js", "js/jquery-2.0.2.min.js", "js/options.js", "js/analytics.js", "js/sha1.js", "js/oauth.js", "js/authhelper.js", "js/shortener.js", "js/twitterutils.js", "js/twittershare.js", "js/twittershare-init.js", "js/upalytics.js", "js/background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "js/twitter_authorize.js" ],
+      "matches": [ "https://api.twitter.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://api-ssl.bitly.com https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Share currently viewed page on Twitter. Automatically shortens long URLs if needed.",
+   "icons": {
+      "128": "img/twittershare-128x128.png"
+   },
+   "manifest_version": 2,
+   "name": "Tweet this page - reborn",
+   "options_page": "html/options.html",
+   "page_action": {
+      "default_icon": "img/twitter-bird-38x38.png",
+      "default_popup": "html/popup.html",
+      "default_title": "Click to share on Twitter",
+      "name": "Open Twitter with prefilled message"
+   },
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "storage", "webNavigation", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.27"
+}

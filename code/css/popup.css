@@ -1,0 +1,147 @@
+body {
+  font: normal normal normal 13px/1.5 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+#tweetMessage {
+  width: 100px;
+  font-weight: bold;
+}
+
+#charsLeft {
+  font-weight: bold;
+  color: #888;
+}
+
+#charsLeft.red {
+  color: #E11;
+}
+
+#charsLeft:focus,#tweetMessage.focus {
+  outline: none;
+}
+
+textarea#status {
+  border: 1px solid #AAA;
+  height: 3.6em;
+  border-top-left-radius: 3px 3px;
+  border-top-right-radius: 3px 3px;
+  border-bottom-left-radius: 3px 3px;
+  border-bottom-right-radius: 3px 3px;
+  padding: 3px;
+  font: normal normal normal 1.15em/1.1 'Lucida Grande', sans-serif;
+  resize: none;
+  width: 515px;
+  background-color: white;
+  cursor: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  -webkit-transition: border 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -webkit-appearance: textarea;
+  -webkit-box-orient: vertical;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+}
+
+textarea#status:disabled {
+  background-color: #EEE;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: rgba(82,168,236,.75) !important;
+  box-shadow: 0 0 8px rgba(82,168,236,.5);
+  -webkit-box-shadow:0 0 8px rgba(82,168,236,.5);
+}
+
+.button {
+  line-height: 13px;
+  border-top-left-radius: 4px 4px;
+  border-top-right-radius: 4px 4px;
+  border-bottom-left-radius: 4px 4px;
+  border-bottom-right-radius: 4px 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #333 !important;
+  display: inline-block;
+  font: normal normal normal 14px/18px 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  margin: 0px;
+  overflow: hidden;
+  text-shadow: #F0F0F0 0px 1px;  
+
+  font-size: 15px;
+  font-weight: 300;
+
+  background: #DDD url(../img/bg-btn.gif) repeat-x 0px 0px;
+  border-color: #CCC;
+  text-decoration: none;
+}
+
+.button.disabled,.button.disabled:hover,.button.disabled:focus {
+  background: #DDD url(../img/bg-btn.gif) repeat-x 0px 0px;
+  border-color: #CCC;
+  cursor: default;
+  color: #AAA !important;
+}
+
+.button:hover,.button:focus {
+  box-shadow:0 0 1px #000,0 0 2px #39d,0 0 6px #39d;
+  background-position:0 -6px;border-color:#999 #999 #666;color:#000;text-decoration:none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  background-image:none;
+  text-shadow:none;outline:none;
+}
+
+#tweetButton {
+  margin-left: 4px;
+  padding: 6px 9px;
+}
+
+
+#pinForm {
+  width: 160px;
+  line-height: 2;
+}
+
+#pin {
+  margin: 0;
+  padding: 3px;
+  resize: none;
+
+  border: 1px solid #AAA;
+  border-top-left-radius: 3px 3px;
+  border-top-right-radius: 3px 3px;
+  border-bottom-left-radius: 3px 3px;
+  border-bottom-right-radius: 3px 3px;
+
+  font-size: 1.5em;
+  background-color: white;
+  -webkit-transition: border 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -webkit-user-select: text;
+}
+
+#pin:focus {
+  outline: none;
+}
+
+.nopin {
+}
+
+
+#pinSubmitButton {
+  padding: 5px 6px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.options{
+  background: url(../img/options.png);
+  height: 24px;
+  width: 24px;
+  float: left;
+  margin-top: 8px;
+}

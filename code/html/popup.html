@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title>Tweet this page</title>
+<link rel="stylesheet" href="../css/popup.css" type="text/css">
+<script type="text/javascript" src="../js/options.js"></script>
+<script type="text/javascript" src="../js/twitterutils.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+</head>
+<body>
+
+<div id="commonForm" style="display: none; width: 100px;">
+  <div id="commonMessage" style="display: inline;">
+  </div>
+</div>
+
+<div id="tweetForm" style="display: none; text-align: right;">
+  <textarea id="status" cols="70" rows="3" tabindex="1">
+  </textarea>
+  <div>
+    <a href="options.html" target="_blank" class="options"></a>
+    <span id="tweetMessage" tabindex="-1"></span>
+    <span id="charsLeft" tabindex="-1"></span>
+    <a href="#" tabindex="2" id="tweetButton" class="button disabled">Tweet</a>
+  </div>
+</div>
+
+<div id="pinForm" style="display: none;">
+  <span style="display: block;">Please enter PIN</span>
+  <input id="pin" type="text" size="7"/>
+  <a href="#" id="pinSubmitButton" class="button">Submit</a>
+  <a href="#" id="authorizeButton" class="nopin">I don't have PIN</a>
+</div>
+
+<script type="text/javascript" src="../js/analytics.js"></script>
+</body>
+</html>

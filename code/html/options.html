@@ -1,0 +1,83 @@
+<!doctype html>
+<html> 
+<head> 
+<title>TwitterShare Options</title> 
+<link rel="stylesheet" href="../css/options.css" type="text/css">
+<script type="text/javascript" src="../js/analytics.js"></script>
+<script type="text/javascript" src="../js/options.js"></script>
+<script type="text/javascript" src="../js/options_page.js"></script>
+<script type="text/javascript" src="../js/jquery-2.0.2.min.js"></script>
+</head> 
+ 
+<body>
+  <table border="0" class="options-pane"> 
+    <tr> 
+      <td class="icon"> 
+        <img src="../img/twittershare-128x128.png" width="32" height="32">
+      </td> 
+      <td width="100%"> 
+        <div class="options-title">"Tweet this page" Options</div> 
+        <table border="0" class="options-table"> 
+          <tr><td>
+            <input type="checkbox" id="alwaysShortenLinks" checked/>
+                Always shorten links (slower)
+          </td></tr> 
+          <tr><td>
+            <input type="checkbox" id="tweetSelection" checked/>
+                Use selected text as tweet body.
+          </td></tr> 
+          <tr><td>
+            <input type="checkbox" id="useTwitterApi"/>
+            <span>Use Twitter API to tweet (otherwise opens new Twitter tab with filled status)</span>
+          </td></tr> 
+          <tr><td style="padding-left: 1em;">
+            <input type="checkbox" id="useExistingTwitterTab"/>
+                Use opened Twitter tab if possible
+          </td></tr> 
+          <tr><td>
+            <div style="margin-top: 15px;"><b>Advanced:</b></div>
+          </td></tr>
+          <tr><td>
+            <span>Custom bit.ly API login & key (both required)</span>
+          </td></tr> 
+          <tr><td>
+            <table style="margin-left: 30px;">
+              <tr>
+                <td><span>login:</span>
+                <td><input type="text" size="40" id="bitlyLogin"/></td>
+              </tr> 
+              <tr>
+                <td><span>key:</span></td>
+                <td><input type="text" size="40" id="bitlyKey"/></td>
+              </tr>            
+            </table>
+          </tr>
+          </td>             
+        
+        <tr><td> 
+        <div class="close-button"> 
+          <button type="button" id="cancelButton">Cancel</button> 
+          <button type="button" id="saveButton">Save</button> 
+        </div>
+        </td></tr>
+
+<!--
+        <tr><td>             
+              	
+			  	</div>
+			    <div align="justify">This extension adds the following ads. If you<br/>
+				    do not with to support us, you are welcome to<br/>
+				    disable ads by clicking the checkbox below
+			    </div> 
+			    <div><input type="checkbox" id="ads_status" name="ads_status" /><label for="revjet­optout">Disable ads</label></div>
+		</td></tr>
+-->
+        </table>
+        <div class="feedback-link">
+          <span>If you have suggestions, bugs or anything to say, please leave a message in <a href="mailto:extension.feedback@gmail.com" target="_top">extension.feedback@gmail.com</a>.
+        </div>
+      </td> 
+    </tr> 
+  </table> 
+</body> 
+</html> 
